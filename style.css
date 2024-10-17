@@ -1,0 +1,57 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+main{
+    height: 100vh;
+    background-color: hsl(281, 90%, 69%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    border: 8px solid;
+    border-radius: 20px;
+    height: 45em;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(260, 88%, 69%);
+}
+
+.box{
+    border: 2px solid;
+    border-radius: 10px;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+}
+
+.color{
+    background-color: hsl(281, 90%, 69%);
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+@keyframes rotate{
+    from{transform: rotateY(-90deg);}
+}
+
+.rotate-animation{
+    animation-name: rotate;
+    animation-duration: 0.5s;
+}
