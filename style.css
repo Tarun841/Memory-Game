@@ -41,10 +41,14 @@ main{
 }
 
 .color{
-    background-color: hsl(281, 90%, 69%);
+    background-color: hsl(0, 9%, 20%);
     height: 80px;
     width: 80px;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
     visibility: hidden;
 }
 
@@ -54,5 +58,5 @@ main{
 
 .rotate-animation{
     animation-name: rotate;
-    animation-duration: 0.5s;
+    animation-duration: 1s;
 }
