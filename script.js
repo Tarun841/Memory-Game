@@ -1,4 +1,4 @@
-let i = 0;
+let i = 0,temp=0;
 let item1,item2,score=0; 
 
 const em = document.getElementsByClassName("color");
@@ -45,6 +45,7 @@ function ChangeColor(element) {
     i++;
  
  if(i==1){
+     temp=element;
     itembox1 = element;
     box1 = element.firstElementChild
  item1 = box1.textContent;
@@ -56,7 +57,7 @@ function ChangeColor(element) {
  }
  console.log(i)
  if(i===2){
-    if(item1 == item2){
+    if(item1 == item2 && temp!=element){
         score++;
         itembox1.style.visibility = "hidden";
         itembox2.style.visibility = "hidden";
